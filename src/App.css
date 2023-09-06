@@ -1,0 +1,60 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg-color: #fafafa;
+  --bg-gradient: linear-gradient(
+    105deg,
+    rgba(184, 203, 237, 1) 0%,
+    rgba(222, 245, 221, 1) 100%
+  );
+  --bg-border: linear-gradient(
+    98deg,
+    rgba(124, 166, 252, 1) 0%,
+    rgba(119, 235, 129, 1) 100%
+  );
+}
+
+body {
+  font-family:-apple-system, BlinkMacSystemFont, sans-serif
+}
+
+
+.app{
+  display: grid;
+  grid-template-rows:auto 1fr;
+  min-height: 100vh;
+}
+
+.app main{
+  padding: 10px;
+  height: 100%;
+  overflow:auto;
+}
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #8ff0af #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #8ff0af;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
